@@ -1,0 +1,56 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 26/07/2020
+ * Time: 17:47
+ */
+?>
+
+<div class="x_panel">
+    <div class="x_title">
+        <h2><i class="fa fa-align-left"> <?= $this->forum->getName(); ?> <small>Catégories</small></i></h2>
+        <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+        <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+        <?php
+        $i=0;
+        foreach ($this->forum->getCategories() as $category):
+        ?>
+            <div class="panel">
+                <a class="panel-heading" role="tab" id="heading<?= ++$i; ?>" data-toggle="collapse" data-parent="#accordion" href="#collapse<?= $i; ?>" aria-expanded="true" aria-controls="collapse<?= $i; ?>">
+                    <h4 class="panel-title"><?= $category->getName(); ?></h4>
+                </a>
+                <div id="collapse<?= $i; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?= $i; ?>">
+                    <div class="panel-body">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="col-lg-3">Sujet</th>
+                                <th class="col-lg-6">Accroche</th>
+                                <th class="col-lg-3">Type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php foreach($category->getSubjects() as $subject): ?>
+
+                            <tr>
+                                <td class="col-lg-3"><?= $subject->getTitle(); ?> </td>
+                                <td class="col-lg-6"><?= $subject->getCatchPhrase(); ?></td>
+                                <td class="col-lg-3"><?= $subject->getType(); ?></td>
+                            </tr>
+
+                            <?php endforeach; ?>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        <?php endforeach; ?>
+        </div>
+    </div>
+</div>
+</div>
+
+

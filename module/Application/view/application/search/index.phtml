@@ -1,0 +1,43 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 11/07/2020
+ * Time: 11:22
+ */
+?>
+
+<?= $form = $this->form()->openTag($this->form); ?>
+
+<div class="form-group">
+    <?= $this->formLabel($this->form->get('search')); ?>
+    <?= $this->formElement($this->form->get('search')); ?>
+    <?= $this->formElementErrors($this->form->get('search')); ?>
+</div>
+
+<div class="form-group">
+    <?= $this->formElement($this->form->get('submit')); ?>
+</div>
+
+<div class="form-group">
+    <?= $this->formElement($this->form->get('csrf')); ?>
+</div>
+
+<?= $this->form()->closeTag(); ?>
+
+<?php if($this->searchreturn): ?>
+    <?php if(count($this->return) < 1): ?>
+        Aucune donnée ne correspons à votre recherche
+    <?php else: ?>
+        <?php foreach($this->return as $return): ?>
+        <fieldset>
+            <a href="<?= $this->url('forum/topic', ['action'=>'view', 'id_forum'=>$this->layout()->getVariable('forum')->getId() ,'id_topic'=>$return->getTopic()->getId()]); ?>">
+                <?= $return->getContent() ?>
+            </a>
+        </fieldset>
+
+        <?php endforeach; ?>
+    <?php endif; ?>
+
+
+<?php endif; ?>

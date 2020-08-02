@@ -1,0 +1,84 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 11/07/2020
+ * Time: 11:22
+ */
+?>
+
+<?= $form = $this->form()->openTag($this->form); ?>
+
+<div class="form-group">
+    <?= $this->formLabel($this->form->get('content')); ?>
+    <?= $this->formElement($this->form->get('content')); ?>
+    <?= $this->formElementErrors($this->form->get('content')); ?>
+</div>
+
+<div class="form-group">
+    <?= $this->formElement($this->form->get('submit')); ?>
+</div>
+
+<div class="form-group">
+    <?= $this->formElement($this->form->get('csrf')); ?>
+</div>
+
+<?= $this->form()->closeTag(); ?>
+
+<script>
+
+    var samCodes = {
+        "i": {"start": '{{i}}', "end": '{{/i}}'},
+        "b": {"start": '{{b}}', "end": '{{/b}}'},
+        "img": {"start": '{{img}}', "end":'{{/img}}', 'options': {'need_text': true, 'query_text': 'saisissez votre lien'} }
+    };
+
+    $( document ).ready(function(){
+
+         var i = 0;
+         $('textarea').each(function(){
+             var textarea = $ ( this );
+             var id_fieldset = "samcode_fieldset_" + i;
+             var id_textarea = textarea.attr('id');
+             if(id_textarea == ''){
+                 i++;
+                 id_textarea = "samcode_textarea_" + i;
+                 textarea.attr('id', id_textarea);
+             }
+
+             textarea.wrap('<fieldset class="samcode_fieldset" id="' + id_fieldset + '"></fieldset>');
+
+             $.each(samCodes, function(key, value){
+                 var btn_i = document.createElement("button");
+                 btn_i.setAttribute('data-action', key);
+                 btn_i.setAttribute('data-textarea', id_textarea);
+                 btn_i.setAttribute('class', 'samcode_action');
+                 btn_i.innerHTML = '<' + key + '>' + key + '<' + key + '/>';
+                 textarea.before(btn_i);
+             })
+
+         });
+    });
+
+    $( document ).on('click', '.samcode_action',  function(e){
+        e.preventDefault();
+        var action = $( this ).data('action');
+        var textarea = $( this ).data('textarea');
+
+        var input_zone = $( '#' + textarea);
+        var samcode = samCodes[action];
+
+        var start = samcode.start;
+
+        if(samcode.options && samcode.options['need_text']){
+            var text = prompt(samcode.options['query_text']);
+            start = start + '--' + text + '--';
+        }
+
+        input_zone.surroundSelectedText(start, samcode.end);
+
+    });
+
+
+
+</script>

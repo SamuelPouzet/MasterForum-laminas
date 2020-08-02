@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d2f4731d-40ab-4bdd-89c8-f21139346f66" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/api-tools-skeleton/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/TopicController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Application/src/Form/TopicForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+              <folding>
+                <element signature="e#117#153#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Application/src/Form/SignForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="28" selection-start-line="28" selection-end-line="37" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Application/view/application/subject/view.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="18" column="100" selection-start-line="18" selection-start-column="100" selection-end-line="18" selection-end-column="100" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="128" column="63" selection-start-line="128" selection-start-column="63" selection-end-line="128" selection-end-column="63" />
+              <folding>
+                <element signature="e#352#397#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hasIdentity</find>
+      <find>Auth</find>
+      <find>'@'</find>
+      <find>function hasIdentity</find>
+      <find>restrict</find>
+      <find>AuthenticationSer</find>
+      <find>authmanager2</find>
+      <find>function authenticate</find>
+      <find>authAdapter::</find>
+      <find>var_dump(</find>
+      <find>Login</find>
+      <find>thorne</find>
+      <find>enderer</find>
+      <find>404</find>
+      <find>popper</find>
+      <find>.clearfix</find>
+      <find>function setTemplate</find>
+      <find>$form</find>
+      <find>fa fa-chevron-down</find>
+      <find>setTer</find>
+      <find>setStorage</find>
+      <find>remember</find>
+      <find>RoleDemo_Auth</find>
+      <find>'error/index'</find>
+      <find>die(</find>
+      <find>Zend_Auth</find>
+      <find>new SessionStorage</find>
+      <find>AuthManager::class</find>
+      <find>AuthManager-</find>
+      <find>::getForumId</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>SubjectId</replace>
+      <replace>Alias</replace>
+      <replace>$this-&gt;form</replace>
+      <replace>fas fa-chevron-down</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/module/Application/src/Controller/Factory/CssControllerFactory.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/css/show.phtml" />
+        <option value="$PROJECT_DIR$/module/Css/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Listener/LayoutListener.php" />
+        <option value="$PROJECT_DIR$/module/Css/src/Controller/CssGeneratorController.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Entity/Template/Elements.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/View/Helper/Navigation.php" />
+        <option value="$PROJECT_DIR$/module/Administration/view/administration/css/partial/edit-css-simple.phtml" />
+        <option value="$PROJECT_DIR$/module/Administration/view/administration/css/index.phtml" />
+        <option value="$PROJECT_DIR$/module/Administration/view/administration/topic/index.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/src/View/Helper/Factory/CustomTemplateHelperFactory.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Entity/ForumCustomResponse.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/topic/partial/paginationControl.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/topic/view.phtml" />
+        <option value="$PROJECT_DIR$/module/Administration/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Administration/src/Controller/TopicController.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/View/Helper/CustomHeaderTemplateHelper.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Entity/Forum.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Entity/ForumCustomHeader.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/View/Helper/CustomTemplateHelper.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/forum/index.phtml" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/Adapter/AuthAdapter.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Service/Factory/NavigationManagerFactory.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/layout/application.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/src/Controller/Factory/AuthController.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/AuthenticationService.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Service/NavigationManager.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Controller/AuthController.php" />
+        <option value="$PROJECT_DIR$/config/autoload/global.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/AuthManager.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/Factory/AuthManagerFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Service/Factory/AuthenticationServiceFactory.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Service/Factory/AuthenticationServiceFactory.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Service/AuthenticationService.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Module.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Controller/Factory/AuthControllerFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Controller/Plugin/Factory/ValidationPluginFactory.php" />
+        <option value="$PROJECT_DIR$/module/User/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/User/src/Controller/Plugin/ValidationPlugin.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Controller/AccountController.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Controller/ProfileController.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Controller/AuthController.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Controller/ResponseController.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/service/email/forgotten-password.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/src/Entity/ForumTopic.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Entity/Template/CustomResponse.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/subject/view.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Form/TopicForm.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Controller/TopicController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpTemplates">
+    <option name="NEW_PHP_FILE_LAST_EXTENSION" value="phtml" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-component-installer" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-router" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-math" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-composer-autoloading" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-crypt" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-permissions-acl" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/container-interop/container-interop" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/michelf/php-markdown" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/zfcampus/zf-deploy" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/zfcampus/zf-console" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-api-problem" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-rpc" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-versioning" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-rest" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-content-validation" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-mvc-auth" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-admin" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-hal" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-content-negotiation" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-provider" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-configuration" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-asset-manager" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-documentation" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-admin-ui" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas-api-tools/api-tools-oauth2" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/herrera-io/json" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/herrera-io/phar-update" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/composer" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/bshaffer/oauth2-server-php" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/kherge/version" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-developer-tools" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-dom" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-development-mode" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-mvc" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-json" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-paginator" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-hydrator" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-console" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-filter" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-validator" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-view" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-authentication" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-uri" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-config" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-modulemanager" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-db" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-servicemanager" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-loader" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-permissions-rbac" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-test" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-escaper" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-inputfilter" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-http" />
+      <path value="$PROJECT_DIR$/api-tools-skeleton/vendor/laminas/laminas-stdlib" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1922" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="autoload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Administration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="forum2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="forum2" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="Helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RBAC-fonctionnel" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\module\Application\view\application" />
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\module\Application\src\Controller\Factory" />
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\module\User\view" />
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\backups-no-commit" />
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\module" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\module\Administration\view\layout" />
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\module\Application\view\layout" />
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\public\js\admin\datatables" />
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\public\js\admin" />
+      <recent name="C:\Users\Sam\PhpstormProjects\forum2\public\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d2f4731d-40ab-4bdd-89c8-f21139346f66" name="Default Changelist" comment="" />
+      <created>1594315555539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594315555539</updated>
+      <workItem from="1594315556694" duration="461000" />
+      <workItem from="1594316270396" duration="7750000" />
+      <workItem from="1594393058507" duration="11751000" />
+      <workItem from="1594449844213" duration="34378000" />
+      <workItem from="1594536694505" duration="13426000" />
+      <workItem from="1594658385899" duration="35493000" />
+      <workItem from="1594824928488" duration="12076000" />
+      <workItem from="1594877047827" duration="3202000" />
+      <workItem from="1594894818789" duration="11877000" />
+      <workItem from="1594981215876" duration="34188000" />
+      <workItem from="1595243694238" duration="4491000" />
+      <workItem from="1595521365983" duration="1558000" />
+      <workItem from="1595657466557" duration="4911000" />
+      <workItem from="1595673672821" duration="69637000" />
+      <workItem from="1595914179829" duration="19103000" />
+      <workItem from="1595999061939" duration="14744000" />
+      <workItem from="1596129183820" duration="3352000" />
+      <workItem from="1596189838417" duration="4988000" />
+      <workItem from="1596264465158" duration="14862000" />
+      <workItem from="1596309829954" duration="22968000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="325216000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20842217" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3261105" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/forum/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Entity/ForumCustomHeader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Entity/ForumCustomResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User-bck/src/Form/RoleForm.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Entity/Forum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="57" column="71" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="71" />
+          <folding>
+            <element signature="e#118#159#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Administration/src/Controller/TopicController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/view/error/404.phtml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/Adapter/AuthAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-536">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Service/Factory/NavigationManagerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/application.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#1304#1310#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/Factory/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/SignController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Service/NavigationManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="74" column="14" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="61" />
+          <folding>
+            <element signature="e#120#149#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/auth/login.phtml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backups-no-commit/AuthenticationService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="34" column="104" selection-start-line="34" selection-start-column="104" selection-end-line="34" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Service/AuthenticationService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Service/Factory/AuthenticationServiceFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+          <folding>
+            <element signature="e#128#174#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/AuthManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/Factory/AuthManagerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/AuthenticationService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laminas/laminas-authentication/src/Storage/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Factory/AuthControllerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" selection-start-line="17" selection-end-line="21" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Factory/UserControllerFactory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Plugin/Factory/ValidationPluginFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="e#131#172#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Plugin/AccessPlugin.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Service/Factory/AuthenticationServiceFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Plugin/CurrentUserPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" selection-start-line="13" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/Plugin/ValidationPlugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="129" column="52" selection-start-line="129" selection-start-column="52" selection-end-line="129" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/Factory/AuthControllerFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#50#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="85" column="94" selection-start-line="85" selection-start-column="94" selection-end-line="85" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/Factory/AccountControllerFactory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/AccountController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/ProfileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="70" column="107" selection-start-line="70" selection-start-column="107" selection-end-line="70" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/ResponseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Repository/ForumTopicRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/User/src/Controller/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="143" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/service/email/forgotten-password.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1027">
+          <caret line="320" column="355" selection-start-line="320" selection-start-column="355" selection-end-line="320" selection-end-column="355" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/View/Helper/CustomTemplateHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="51" column="49" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="49" />
+          <folding>
+            <element signature="e#124#158#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/topic/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Entity/Template/CustomResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" column="95" selection-start-line="30" selection-start-column="95" selection-end-line="30" selection-end-column="95" />
+          <folding>
+            <element signature="e#126#160#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Entity/ForumTopic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="78" column="47" selection-start-line="78" selection-start-column="47" selection-end-line="78" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/subject/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="100" selection-start-line="18" selection-start-column="100" selection-end-line="18" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="128" column="63" selection-start-line="128" selection-start-column="63" selection-end-line="128" selection-end-column="63" />
+          <folding>
+            <element signature="e#352#397#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Form/SignForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" selection-start-line="28" selection-end-line="37" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Form/TopicForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+          <folding>
+            <element signature="e#117#153#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/TopicController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

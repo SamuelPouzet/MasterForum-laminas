@@ -1,0 +1,21 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 11/07/2020
+ * Time: 09:44
+ */
+?>
+
+<?php foreach($this->subject->getTopics() as $topic): ?>
+    <div class="card">
+        <div class="card-body">
+            <a href="<?= $this->url('forum/topic', ['action'=>'view', 'id_forum'=>\User\Module::getForumId(), 'id_topic'=>$topic->getId()]) ?>">
+                <?= $topic->getTitle(); ?>
+            </a>
+        </div>
+    </div>
+<?php endforeach; ?>
+<a href="<?= $this->url('forum/topic', ['action'=>'add', 'id_forum'=>\User\Module::getForumId(), 'id'=>$this->subject->getId()]) ?>">
+    Ajouter un topic
+</a>

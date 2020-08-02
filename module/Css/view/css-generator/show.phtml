@@ -1,0 +1,16 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 28/12/2019
+ * Time: 13:32
+ */
+
+header("Content-type: text/css; charset: UTF-8");
+
+foreach($this->classes as $class): ?>
+<?= $class->getHeader(); ?>{
+    <?php foreach($class->getValues() as $attr):?>
+            <?= $attr->getName(); ?>: <?= $attr->getAttribute(); ?>;
+    <?php endforeach; ?>}
+<?php endforeach; ?>

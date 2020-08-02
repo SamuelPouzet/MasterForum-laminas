@@ -1,0 +1,43 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 28/07/2020
+ * Time: 19:46
+ */
+
+
+$this->headTitle('Edit Permission');
+
+
+$form->get('header')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'Enter data'
+    ]);
+
+$form->get('submit')
+        ->setAttributes(['class'=>'btn btn-primary'])
+        ->setValue('Save');
+
+$form->prepare();
+?>
+
+<h1>Edit Permission</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('header')); ?>
+            <?= $this->formElement($form->get('header')); ?>
+            <?= $this->formElementErrors($form->get('header')); ?>
+        </div>
+
+        <?= $this->formElement($form->get('csrf')); ?>
+
+        <?= $this->formElement($form->get('submit')); ?>
+
+        <?= $this->form()->closeTag(); ?>
+    </div>
+</div>

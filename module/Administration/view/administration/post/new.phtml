@@ -1,0 +1,64 @@
+<?php
+$this->headTitle('Edit Subject');
+
+
+
+$this->form->get('content')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>'John Doe'
+    ]);
+
+$this->form->get('topic_id')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'John Doe'
+]);
+
+$this->form->get('author_id')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'John Doe'
+]);
+
+$this->form->get('submit')
+        ->setAttributes(['class'=>'btn btn-primary'])
+        ->setValue('Save');
+
+$this->form->prepare();
+?>
+
+<h1>Edit Response</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $form = $this->form()->openTag($this->form); ?>
+
+        <div class="form-group">
+            <?= $this->formLabel($this->form->get('content')); ?>
+            <?= $this->formElement($this->form->get('content')); ?>
+            <?= $this->formElementErrors($this->form->get('content')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($this->form->get('topic_id')); ?>
+            <?= $this->formElement($this->form->get('topic_id')); ?>
+            <?= $this->formElementErrors($this->form->get('topic_id')); ?>
+        </div>
+
+
+        <div class="form-group">
+            <?= $this->formLabel($this->form->get('author_id')); ?>
+            <?= $this->formElement($this->form->get('author_id')); ?>
+            <?= $this->formElementErrors($this->form->get('author_id')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formElement($this->form->get('submit')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formElement($this->form->get('csrf')); ?>
+        </div>
+
+        <?= $this->form()->closeTag(); ?>
+    </div>    
+</div>   
+

@@ -1,0 +1,39 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 20/07/2020
+ * Time: 17:35
+ */
+?>
+
+<table>
+    <thead>
+    <td>
+        Conversation
+    </td>
+    <td>
+        Dernier message
+    </td>
+    <td>
+        Non lus
+    </td>
+    </thead>
+    <tbody>
+    <?php foreach ($this->messages as $message): ?>
+    <tr>
+        <td>
+            <a href="<?= $this->url('forum/messenger', ['action'=>'conversation', 'id_forum'=>\User\Module::getForumId(), 'id'=>$message->getId()]); ?>">
+            <?= $message->getTitle(); ?>
+            </a>
+        </td>
+        <td>
+
+        </td>
+        <td>
+
+        </td>
+    </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>

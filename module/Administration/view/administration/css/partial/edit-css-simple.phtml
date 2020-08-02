@@ -1,0 +1,60 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 31/07/2020
+ * Time: 12:17
+ */
+
+?>
+
+<div class="x_content">
+    <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+        <?php
+        $i=0;
+        foreach ($this->styles as $style):
+        ?>
+        <div class="panel">
+            <a class="panel-heading" role="tab" id="heading<?= ++$i; ?>" data-toggle="collapse" data-parent="#accordion" href="#collapse<?= $i; ?>" aria-expanded="true" aria-controls="collapse<?= $i; ?>">
+                <h4 class="panel-title"><?= $style->getHeader(); ?></h4>
+            </a>
+            <div id="collapse<?= $i; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?= $i; ?>">
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="col-lg-3">Attribut <a href="<?= $this->url('admin/css',['action'=>'newValue', 'id_forum'=>\User\Module::getForumId()]); ?>" ><i class="fas fa-plus-circle"></i></a></th>
+                            <th class="col-lg-6">Valeur</th>
+                            <th class="col-lg-3">Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                        $keys = $style->getValues();
+                        foreach($keys as $key): ?>
+
+                            <tr>
+                                <td class="col-lg-3"><?= $key->getAttribute(); ?></td>
+                                <td class="col-lg-6"><?= $key->getValue(); ?></td>
+                                <td class="col-lg-3">
+                                    <a href="<?= $this->url('admin/css',['action'=>'editValue', 'id_forum'=>\User\Module::getForumId(), 'id'=>$key->getId()]); ?>">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a href="<?= $this->url('admin/css',['action'=>'deleteValue', 'id_forum'=>\User\Module::getForumId(), 'id'=>$key->getId()]); ?>">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+
+                        <?php endforeach; ?>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <a class="btn btn-success" href="<?= $this->url('admin/css', ['action'=>'new', 'id_forum'=>\User\Module::getForumId()]);?>">Nouvelle donnée</a>
+</div>
+

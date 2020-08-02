@@ -1,0 +1,91 @@
+:root {
+    --brand-color: #013755;
+}
+
+.navbar {
+    background-color: var(--brand-color);
+}
+
+.navbar img{
+    max-height:100px;
+}
+
+.btn-primary {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+.btn-secondary{
+    background-color: var(--brand-color);
+}
+
+/****************** avatar **************/
+.post{
+    margin-bottom:25px;
+    border-bottom: 2px outset #013755;
+    background-color:white;
+}
+
+.post .post-avatar{
+
+}
+
+.post .post-avatar::after{
+    clear:both;
+}
+
+.post .post-avatar .pres {
+    height:25px;
+}
+
+.post .post-avatar .avatar-header {
+
+}
+
+.post .post_wrapper{
+    padding: 5px;
+}
+
+.post .post_wrapper img{
+    max-width: 100%;
+}
+.post .pres img{
+    position: absolute;
+    top:0px;
+    right:0px;
+    max-width:100%;
+    clear:both;
+}
+
+.post .post-avatar .pres .text-avatar{
+    position: relative;
+    top:0px;
+    right:0px;
+    max-width:100%;
+}
+
+.post .sign{
+    color:silver;
+    font-size: 0.8em;
+}
+
+#custom_header_wrapper{
+    display: block;
+    list-style-type: none;
+    margin-top:0;
+    background: silver;
+    margin-bottom:5px;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+
+#custom_header_wrapper ul{
+    list-style-type: none;
+}
+
+#custom_header_wrapper img{
+    max-width: 100%;
+    margin:0;
+    padding:0;
+}

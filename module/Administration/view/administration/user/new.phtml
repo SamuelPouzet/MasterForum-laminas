@@ -1,0 +1,86 @@
+<?php
+$this->headTitle('Add User');
+
+
+$form->get('email')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>'name@example.com'
+    ]);
+
+$form->get('name')->setAttributes([
+    'class'=>'form-control', 
+    'placeholder'=>'John Doe'
+    ]);
+
+$form->get('firstName')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'John Doe'
+]);
+
+$form->get('alias')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'John Doe'
+]);
+
+$form->get('status')->setAttributes([
+    'class'=>'form-control'
+    ]);
+
+
+$form->get('submit')
+        ->setAttributes(['class'=>'btn btn-primary'])
+        ->setValue('Save');
+
+$form->prepare();
+?>
+
+<h1>Ajout d'un utilisateur</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $form = $this->form()->openTag($this->form); ?>
+
+        <div class="form-group">
+            <?= $this->formLabel($this->form->get('email')); ?>
+            <?= $this->formElement($this->form->get('email')); ?>
+            <?= $this->formElementErrors($this->form->get('email')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($this->form->get('name')); ?>
+            <?= $this->formElement($this->form->get('name')); ?>
+            <?= $this->formElementErrors($this->form->get('name')); ?>
+        </div>
+
+
+        <div class="form-group">
+            <?= $this->formLabel($this->form->get('firstName')); ?>
+            <?= $this->formElement($this->form->get('firstName')); ?>
+            <?= $this->formElementErrors($this->form->get('firstName')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($this->form->get('alias')); ?>
+            <?= $this->formElement($this->form->get('alias')); ?>
+            <?= $this->formElementErrors($this->form->get('alias')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($this->form->get('status')); ?>
+            <?= $this->formElement($this->form->get('status')); ?>
+            <?= $this->formElementErrors($this->form->get('status')); ?>
+        </div>
+
+
+        <div class="form-group">
+            <?= $this->formElement($this->form->get('submit')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formElement($this->form->get('csrf')); ?>
+        </div>
+
+        <?= $this->form()->closeTag(); ?>
+    </div>    
+</div>   
+

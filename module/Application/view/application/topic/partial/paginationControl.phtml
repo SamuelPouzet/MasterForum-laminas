@@ -1,0 +1,43 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 25/07/2020
+ * Time: 13:43
+ */
+?>
+
+<?php if ($this->pageCount): ?>
+    <div class="btn-group btn-group-sm" role="group" aria-label="...">
+
+
+            <!-- Previous page link -->
+            <?php if (isset($this->previous)): ?>
+                    <a href="<?= $this->url($this->route, ['action'=>$this->action, 'id_forum'=>\User\Module::getForumId(), 'id_topic'=>$this->topic->getId(), 'numpage'=>$this->previous]); ?>" aria-label="Previous">
+                        <button class="btn btn-secondary" type="button">&laquo;</button>
+                    </a>
+            <?php else: ?>
+
+            <?php endif; ?>
+
+            <!-- Numbered page links -->
+            <?php foreach ($this->pagesInRange as $page): ?>
+                <?php if ($page != $this->current): ?>
+                        <a href="<?= $this->url($this->route, ['action'=>$this->action, 'id_forum'=>\User\Module::getForumId(), 'id_topic'=>$this->topic->getId(), 'numpage'=>$page] ); ?>">
+                            <button class="btn btn-secondary" type="button"> <?= $this->escapeHtml($page); ?></button>
+                        </a>
+                <?php else: ?>
+
+                <?php endif; ?>
+            <?php endforeach; ?>
+
+            <!-- Next page link -->
+            <?php if (isset($this->next)): ?>
+                    <a href="<?php echo $this->url($this->route, ['action'=>$this->action, 'id_forum'=>\User\Module::getForumId(), 'id_topic'=>$this->topic->getId(), 'numpage'=>$this->next]); ?>" aria-label="Next">
+                        <button class="btn btn-secondary" type="button">&raquo;</button>
+                    </a>
+            <?php else: ?>
+
+            <?php endif; ?>
+    </div>
+<?php endif; ?>

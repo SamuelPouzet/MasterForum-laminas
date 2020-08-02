@@ -1,0 +1,68 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 11/07/2020
+ * Time: 10:29
+ */
+?>
+
+<?= $this->paginationControl($this->responses,
+    'Sliding',
+    'application/topic/partial/paginationControl',
+    ['route' => 'forum/topic', 'topic'=>$this->topic, 'action'=>'view']); ?>
+
+
+<?php if($this->topic->getType() != 0): ?>
+<?= $this->customTemplate()->setTopic($this->topic)->render(); ?>
+<?php endif; ?>
+
+<?php foreach($this->responses as $response): ?>
+    <section class="row post">
+        <section class="post-avatar col-lg-3">
+            <?php if($response->getAuthor()->getProfile()): ?>
+            <article class="avatar-header col-lg-12">
+                <?= $response->getAuthor()->getAlias(); ?>
+            </article>
+            <article class="pres col-lg-12">
+                <img class="img-avatar" src="<?= $response->getAuthor()->getProfile()->getAvatar(); ?>">
+                <p class="text-avatar" style="display:none"><?= nl2br($response->getAuthor()->getProfile()->getDescription()); ?></p>
+            </article>
+            <?php else: ?>
+            <p class="img-avatar"><?= $response->getAuthor()->getAlias(); ?></p>
+            <?php endif; ?>
+        </section>
+        <section class="post-content col-lg-9">
+            <?= nl2br( $response->getContent() ); ?>
+            <?php if($response->getAuthor()->getProfile()): ?>
+            <hr>
+                <span class="sign"><?= nl2br($response->getAuthor()->getProfile()->getSignature()); ?></span>
+            <?php endif; ?>
+        </section>
+    </section>
+<?php endforeach; ?>
+
+<?= $this->paginationControl($this->responses,
+    'Sliding',
+    'application/topic/partial/paginationControl',
+    ['route' => 'forum/topic', 'topic'=>$this->topic, 'action'=>'view']); ?>
+
+<a class="btn btn-success" href = <?= $this->url('forum/response', ['action'=>'add', 'id_forum'=>\User\Module::getForumId(), 'id_topic'=>$this->topic->getId()]) ?> >Répondre</a>
+
+
+<script>
+    $('.post-avatar').hover(function(){
+        $( this ).find('.img-avatar').fadeOut( 480 );
+        $( this ).find('.text-avatar').fadeIn( 600 );
+    },
+    function(){
+        $( this ).find('.text-avatar').fadeOut( 400 );
+        $( this ).find('.img-avatar').fadeIn( 480 );
+    }
+    );
+
+        //.off(function(){
+        //$( this ).fadeOut( 180 );
+        //$( this ).fadeIn( 500 );
+    //});
+</script>

@@ -1,0 +1,28 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 27/12/2019
+ * Time: 16:43
+ */
+?>
+
+<?php if($this->forum->getCustomHeader()): ?>
+<article id="custom_header_wrapper">
+    <?= $this->forum->getCustomHeader()->getHtml(); ?>
+</article>
+<?php endif; ?>
+
+    <?php foreach($forum->getCategories() as $category): ?>
+    <h1 class="category-name"><?= $category->getName(); ?></h1>
+        <?php foreach($category->getSubjects() as $subject): ?>
+        <div class="card">
+            <div class="card-body">
+                <a href="<?= $this->url('forum/subject', ['action'=>'view', 'id_forum'=>$this->forum->getId() , 'id_subject'=>$subject->getId()]) ?>">
+                    <?= $subject->getTitle(); ?>
+                </a>
+            </div>
+        </div>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
+

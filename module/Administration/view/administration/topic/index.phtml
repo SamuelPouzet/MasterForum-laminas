@@ -1,0 +1,58 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 27/07/2020
+ * Time: 07:49
+ */
+?>
+
+<div class="x_content">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card-box table-responsive">
+                <p class="text-muted font-13 m-b-30">
+                    Responsive is an extension for DataTables that resolves that problem by optimising the table's layout for different screen sizes through the dynamic insertion and removal of columns from the table.
+                </p>
+
+                <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Accroche</th>
+                        <th>Catégorie</th>
+                        <th>Nb Réponses</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach($this->topics as $topic): ?>
+                    <tr>
+                        <td><?= $topic->getTitle(); ?></td>
+                        <td></td>
+                        <td><?= $topic->getSubject()->getTitle(); ?></td>
+                        <td><?= count($topic->getResponses()); ?></td>
+                        <td><a href="<?= $this->url('admin/pages/topic', ['action'=>'edit', 'id_forum'=>\User\Module::getForumId(), 'id'=>$topic->getId()]); ?>"><i class="far fa-edit"></i></a></td>
+                    </tr>
+                    <?php endforeach; ?>
+
+                    </tbody>
+                </table>
+            </div>
+            <a class="btn btn-info" href="<?= $this->url('admin/pages/topic', ['action'=>'new', 'id_forum'=>\User\Module::getForumId() ]); ?>">Nouveau</a>
+        </div>
+    </div>
+</div>
+
+
+
+<?=
+$this->headLink()
+    ->appendStylesheet($this->basePath('https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css'))
+    ->appendStylesheet($this->basePath('/css/admin/datatables/dataTables.bootstrap.min.css'));
+
+$this->inlineScript()
+    ->appendFile('/js/admin/datatables/dataTables.bootstrap.min.js')
+    ->appendFile('/js/admin/datatables/jquery.dataTables.min.js')
+    ->appendFile('/js/admin/datatables/dataTables.responsive.min.js');
+?>
