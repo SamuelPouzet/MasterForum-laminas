@@ -4,12 +4,16 @@ namespace User;
 use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Segment;
 use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
+use User\Controller\Plugin\DelogPlugin;
+use User\Controller\Plugin\Factory\DelogPluginFactory;
 use User\Controller\Plugin\Factory\ValidationPluginFactory;
 use User\Controller\Plugin\ValidationPlugin;
 use User\Service\Adapter\Factory\AuthAdapterFactory;
 use User\Service\Adapter\AuthAdapter;
 use User\Service\Factory\AuthenticationServiceFactory;
+use User\Service\Factory\LogManagerFactory;
 use User\Service\Factory\UserManagerFactory;
+use User\Service\LogManager;
 use User\Service\UserManager;
 
 return [
@@ -123,11 +127,13 @@ return [
             Controller\Plugin\AccessPlugin::class => Controller\Plugin\Factory\AccessPluginFactory::class,
             Controller\Plugin\CurrentUserPlugin::class => Controller\Plugin\Factory\CurrentUserPluginFactory::class,
             ValidationPlugin::class => ValidationPluginFactory::class,
+            DelogPlugin::class=>DelogPluginFactory::class,
         ],
         'aliases' => [
             'access' => Controller\Plugin\AccessPlugin::class,
             'currentUser' => Controller\Plugin\CurrentUserPlugin::class,
             'validation' => ValidationPlugin::class,
+            'delog' => DelogPlugin::class,
         ],
     ],
     // The 'access_filter' key is used by the User module to restrict or permit
@@ -158,6 +164,7 @@ return [
             \User\Service\AuthenticationService::class => AuthenticationServiceFactory::class,
             UserManager::class=>UserManagerFactory::class,
             AuthAdapter::class=>AuthAdapterFactory::class,
+            LogManager::class=>LogManagerFactory::class,
         ],
     ],
     'view_manager' => [

@@ -31,7 +31,7 @@ class ForumCustomResponse
     protected $topic_id;
 
     /**
-     * @ORM\OneToOne(targetEntity="ForumTopic", inversedBy="custom_response")
+     * @ORM\OneToOne(targetEntity="ForumTopic", inversedBy="custom_response", cascade={"persist"})
      */
     protected $topic;
 
@@ -147,7 +147,7 @@ class ForumCustomResponse
      * @param DateTime $date_created
      * @return ForumResponse
      */
-    public function setDateCreated(\DateTime $date_created):ForumResponse
+    public function setDateCreated(\DateTime $date_created):ForumCustomResponse
     {
         $this->date_created = $date_created->format('Y-m-d H:i:s');
         return $this;

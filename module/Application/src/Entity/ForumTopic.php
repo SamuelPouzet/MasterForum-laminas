@@ -74,12 +74,6 @@ class ForumTopic
      */
     protected $custom_response;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="Application\Entity\Template\CustomResponse", inversedBy="topic")
-     * @ORM\JoinColumn(name="custom_response_id", referencedColumnName="id")
-     */
-    protected $custom_template;
-
 
     public function __construct()
     {
@@ -280,25 +274,5 @@ class ForumTopic
         $this->custom_response = $custom_response;
         return $this;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getCustomTemplate()
-    {
-        return $this->custom_template;
-    }
-
-    /**
-     * @param mixed $custom_template
-     * @return ForumTopic
-     */
-    public function setCustomTemplate($custom_template)
-    {
-        $this->custom_template = $custom_template;
-        return $this;
-    }
-
-
 
 }

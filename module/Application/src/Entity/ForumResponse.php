@@ -31,7 +31,7 @@ class ForumResponse
     protected $topic_id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="ForumTopic", inversedBy="subjects")
+     * @ORM\ManyToOne(targetEntity="ForumTopic", inversedBy="subjects",cascade={"persist"})
      * @ORM\JoinColumn(name="topic_id", referencedColumnName="id")
      */
     protected $topic;

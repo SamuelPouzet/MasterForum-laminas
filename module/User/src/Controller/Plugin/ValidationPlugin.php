@@ -57,9 +57,9 @@ class ValidationPlugin extends AbstractPlugin
                 if (!$uri->isValid() || $uri->getHost()!=null){
                     throw new \Exception('Incorrect redirect URL: ' . $redirectUrl);
                 }
-                return ['error'=>false, 'uri'=>$uri];
+                return ['error'=>false, 'uri'=>$uri->getPath()];
             }else{
-                return ['error'=>false, 'uri'=>null];
+                return ['error'=>false, 'uri'=>'/'];
             }
         } else {
             return ['error'=>true, 'uri'=>null];

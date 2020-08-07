@@ -43,12 +43,14 @@ use Application\Service\Factory\ProfileManagerFactory;
 use Application\Service\Factory\ResponseManagerFactory;
 use Application\Service\Factory\SignManagerFactory;
 use Application\Service\Factory\TextServiceFactory;
+use Application\Service\Factory\TopicManagerFactory;
 use Application\Service\MailerService;
 use Application\Service\NavigationManager;
 use Application\Service\ProfileManager;
 use Application\Service\ResponseManager;
 use Application\Service\SignManager;
 use Application\Service\TextService;
+use Application\Service\TopicManager;
 use Application\View\Helper\CustomTemplateHelper;
 use Application\View\Helper\Factory\CustomTemplateHelperFactory;
 use Application\View\Helper\Navigation;
@@ -273,6 +275,7 @@ return [
             SignManager::class=>SignManagerFactory::class,
             MailerService::class=>MailerServiceFactory::class,
             MessengerResponseManager::class=>MessengerResponseManagerFactory::class,
+            TopicManager::class=>TopicManagerFactory::class,
         ],
     ],
     'view_helpers' => [

@@ -14,6 +14,7 @@ use Application\Entity\Forum;
 use Doctrine\ORM\EntityManager;
 use Laminas\Mvc\Controller\AbstractActionController;
 use Laminas\View\Model\ViewModel;
+use User\Entity\Log;
 use User\Module;
 
 class ForumController extends AbstractActionController
@@ -39,9 +40,12 @@ class ForumController extends AbstractActionController
             $this->getResponse()->setStatusCode(404);
         }
 
+        $connected = $this->entityManager->getRepository(Log::class)->getConnectedUsers();
+
 
         return new ViewModel([
             'forum' => $this->forum,
+            'connected_users' => $connected,
         ]);
     }
 

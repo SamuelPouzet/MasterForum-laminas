@@ -33,6 +33,9 @@ return [
     'session_config' => [
         'cookie_lifetime'     => 60*60*1, // Session cookie will expire in 1 hour.
         'gc_maxlifetime'      => 60*60*24*30, // How long to store session data on server (for 1 month).
+        'remember_me_seconds' =>  60*60*24*30, // How long to store remember_me session
+        'cookie_secure' => false,
+        'save_path' => ROOT_PATH . '/data/session',
     ],
     // Session manager configuration.
     'session_manager' => [

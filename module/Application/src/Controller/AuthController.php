@@ -64,7 +64,8 @@ class AuthController extends AbstractActionController
 
                 $response = $this->validation($data, $redirectUrl);
 
-                if( isset($response['error']) && $response['error'] !== false){
+                if( isset($response['error']) && $response['error'] == false){
+
                     if(isset($response['uri']) && $response['uri'] !== null){
                         $this->redirect()->toUrl( $response['uri'] );
                     }else{
@@ -85,6 +86,12 @@ class AuthController extends AbstractActionController
         ]);
 
         return $view;
+    }
+
+    public function logoutAction()
+    {
+        $this->delog();
+        $this->redirect()->toRoute('forum/index', ['id_forum'=>Module::getForumId()]);
     }
 
 }

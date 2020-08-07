@@ -2,24 +2,27 @@
 /**
  * Created by PhpStorm.
  * User: Sam
- * Date: 01/08/2020
- * Time: 09:09
+ * Date: 02/08/2020
+ * Time: 10:39
  */
 
-namespace Application\View\Helper\Factory;
+namespace User\Controller\Plugin\Factory;
 
 
-use Application\View\Helper\CustomTemplateHelper;
 use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;
+use User\Controller\Plugin\DelogPlugin;
+use User\Service\AuthManager;
 
-class CustomTemplateHelperFactory implements FactoryInterface
+class DelogPluginFactory implements FactoryInterface
 {
 
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
         $entityManager = $container->get('doctrine.entitymanager.orm_default');
-        return new CustomTemplateHelper($entityManager);
+        $authManager = $container->get(AuthManager::class);
+
+        return new DelogPlugin($entityManager, $authManager);
     }
 
 }

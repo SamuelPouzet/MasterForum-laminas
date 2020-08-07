@@ -13,8 +13,8 @@ class Role
 {
     /**
      * @ORM\Id
-     * @ORM\Column(name="id")
      * @ORM\GeneratedValue
+     * @ORM\Column(name="id")
      */
     protected $id;
 

@@ -10,6 +10,8 @@ namespace Application\View\Helper;
 
 
 use Application\Entity\ForumTopic;
+use Application\Entity\Template\CustomResponse;
+use Doctrine\ORM\EntityManager;
 use Laminas\View\Helper\AbstractHelper;
 
 class CustomTemplateHelper extends AbstractHelper
@@ -17,10 +19,11 @@ class CustomTemplateHelper extends AbstractHelper
 
     protected $topic;
 
+    protected $entityManager;
 
-    public function __construct()
+    public function __construct(EntityManager $entityManager)
     {
-
+        $this->entityManager = $entityManager;
     }
 
     public function setTopic(ForumTopic $topic):CustomTemplateHelper
@@ -59,8 +62,9 @@ class CustomTemplateHelper extends AbstractHelper
 
     protected function renderHtml()
     {
-        $html = $this->topic->getCustomTemplate()->getHtml();
-        $variables = json_decode($this->topic->getCustomTemplate()->getVariables(), true);
+        $customTemplate = $this->entityManager->getRepository(CustomResponse::class)->find( $this->topic->getType() );
+        $html = $customTemplate->getHtml();
+        $variables = json_decode( $customTemplate->getVariables(), true);
 
         $data = json_decode( $this->topic->getCustomResponse()->getContent(), true );
         foreach($variables as $variable){

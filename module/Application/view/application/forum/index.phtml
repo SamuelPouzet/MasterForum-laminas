@@ -26,3 +26,9 @@
         <?php endforeach; ?>
     <?php endforeach; ?>
 
+<article id="custom_useronline_wrapper">
+   <?php foreach($this->connected_users as $connected_user): ?>
+    <?= $connected_user->getAlias(); ?>
+    <?php endforeach; ?>
+</article>
+

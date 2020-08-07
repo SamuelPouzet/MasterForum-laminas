@@ -13,13 +13,17 @@ use Application\Controller\Base\BaseController;
 use Application\Entity\ForumResponse;
 use Application\Entity\ForumSubject;
 use Application\Entity\ForumTopic;
+use Application\Entity\Template\CustomResponse;
 use Application\Form\TopicForm;
+use Application\Service\TopicManager;
 use Doctrine\ORM\EntityManager;
 use DoctrineORMModule\Paginator\Adapter\DoctrinePaginator as DoctrineAdapter;
 use Doctrine\ORM\Tools\Pagination\Paginator as ORMPaginator;
 use Laminas\Mvc\Controller\AbstractActionController;
 use Laminas\Paginator\Paginator;
 use Laminas\View\Model\ViewModel;
+use User\Entity\User;
+use User\Module;
 
 class TopicController extends AbstractActionController
 {
@@ -29,13 +33,16 @@ class TopicController extends AbstractActionController
      */
     protected $entityManager;
 
+    protected $topicManager;
+
     /**
      * TopicController constructor.
      * @param EntityManager $entityManager
      */
-    public function __construct(EntityManager $entityManager)
+    public function __construct(EntityManager $entityManager, TopicManager $topicManager)
     {
         $this->entityManager = $entityManager;
+        $this->topicManager = $topicManager;
     }
 
     public function viewAction():ViewModel
@@ -76,10 +83,28 @@ class TopicController extends AbstractActionController
             throw new \Exception('this subject does not exist');
         }
 
-        $form = new TopicForm($this->entityManager, $subject);
+        $customTemplate = $this->entityManager->getRepository(CustomResponse::class)->find( $subject->getType() );
+        $form = new TopicForm($customTemplate);
+
+        if($this->getRequest()->isPost()){
+            $data = $this->params()->fromPost();
+            //@todo refacto in a fom collection
+            $custom = isset($data['custom'])?json_encode($data['custom']):null;
+            $normal = isset($data['normal_post'])?$data['normal_post']:null;
+            $form->setData($data);
+            if($form->isValid()){
+                $author = $this->currentUser();
+                $data = $form->getData();
+                $data['custom'] = $custom;
+                $data['normal'] = $normal;
+                $this->topicManager->add($data, $subject, $author);
+                $this->redirect()->toRoute('forum/response', ['action'=>'view', 'id_forum'=>Module::getForumId(),'id'=>$idSubject]);
+            }
+        }
 
         return new ViewModel([
-            'form'=>$form,
+            'form' => $form,
+            'template' => $customTemplate,
         ]);
     }
 

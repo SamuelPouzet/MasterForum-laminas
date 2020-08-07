@@ -2,24 +2,23 @@
 /**
  * Created by PhpStorm.
  * User: Sam
- * Date: 01/08/2020
- * Time: 09:09
+ * Date: 07/08/2020
+ * Time: 07:58
  */
 
-namespace Application\View\Helper\Factory;
+namespace User\Service\Factory;
 
 
-use Application\View\Helper\CustomTemplateHelper;
 use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;
+use User\Service\LogManager;
 
-class CustomTemplateHelperFactory implements FactoryInterface
+class LogManagerFactory implements FactoryInterface
 {
-
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
         $entityManager = $container->get('doctrine.entitymanager.orm_default');
-        return new CustomTemplateHelper($entityManager);
+        return new LogManager($entityManager);
     }
 
 }

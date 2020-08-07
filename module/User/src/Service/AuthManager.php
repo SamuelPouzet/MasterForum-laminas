@@ -10,10 +10,8 @@ namespace User\Service;
 
 
 use Laminas\Authentication\Result;
-use Laminas\Session\Container;
 use Laminas\Session\SessionManager;
-use User\Module;
-use \User\Service\Adapter\AuthAdapter;
+
 
 class AuthManager
 {

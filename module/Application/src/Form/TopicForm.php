@@ -9,20 +9,22 @@
 namespace Application\Form;
 
 
-use Application\Entity\ForumSubject;
-use Doctrine\ORM\EntityManager;
+use Laminas\Form\Element\Collection;
+use Laminas\Form\Element\Csrf;
+use Laminas\Form\Element\Submit;
 use Laminas\Form\Element\Text;
+use Laminas\Form\Element\Textarea;
 use Laminas\Form\Form;
 
 class TopicForm extends Form
 {
 
-    protected $entityManager;
-    protected $subject;
+    protected $customTemplate;
 
-    public function __construct(EntityManager $em, ForumSubject $subject, $name = null, array $options = [])
+    public function __construct($customTemplate, $name = null, array $options = [])
     {
         parent::__construct($name, $options);
+        $this->customTemplate = $customTemplate;
         $this->getFormElements();
     }
 
@@ -48,6 +50,26 @@ class TopicForm extends Form
             'options' => [
                 'label' => "Phrase d'accroche",
             ],
+        ]);
+
+        // Add the Submit button
+        $this->add([
+            'type' => Submit::class,
+            'name' => 'submit',
+            'attributes' => [
+                'value' => 'Rechercher',
+                'id' => 'submit',
+            ],
+        ]);
+
+        $this->add([
+            'type' => Csrf::class,
+            'name' => 'csrf',
+            'options' => [
+                'csrf_options' => [
+                    'timeout' => 600
+                ]
+            ]
         ]);
     }
 

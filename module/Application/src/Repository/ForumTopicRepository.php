@@ -19,9 +19,8 @@ use User\Module;
 class ForumTopicRepository extends EntityRepository
 {
 
-    public function findTopicInForum(int $id_topic):ForumTopic
+    public function findTopicInForum(int $id_topic):?ForumTopic
     {
-
         $qb = $this->getEntityManager()->createQueryBuilder();
 
         $qb->select("T");

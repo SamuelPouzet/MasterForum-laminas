@@ -171,7 +171,7 @@ class Forum
     /**
      * @return PersistentCollection
      */
-    public function getElements(): Elements
+    public function getElements():Elements
     {
         return $this->elements;
     }
