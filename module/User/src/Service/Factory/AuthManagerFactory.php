@@ -6,6 +6,7 @@ use Laminas\ServiceManager\Factory\FactoryInterface;
 use Laminas\Session\SessionManager;
 use User\Service\AuthenticationService;
 use User\Service\AuthManager;
+use User\Service\RbacManager;
 
 /**
  * This is the factory class for AuthManager service. The purpose of the factory
@@ -31,7 +32,9 @@ class AuthManagerFactory implements FactoryInterface
         $authService = $container->get(AuthenticationService::class);
 
         $sessionManager = $container->get(SessionManager::class);
-        // Instantiate the AuthManager service and inject dependencies to its constructor.
-        return new AuthManager($config, $authService, $sessionManager);
+
+        $rbacManager = $container->get(RbacManager::class);
+
+        return new AuthManager($config, $authService, $sessionManager, $rbacManager);
     }
 }

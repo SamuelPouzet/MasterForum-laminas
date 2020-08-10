@@ -12,6 +12,7 @@ namespace Application\Service;
 use Application\Entity\Forum;
 use Doctrine\ORM\EntityManager;
 use Laminas\View\Helper\Url;
+use User\Entity\User;
 use User\Module;
 use User\Service\AuthenticationService;
 
@@ -72,24 +73,36 @@ class NavigationManager
         ];
 
         $elements[] = $element;
-//die(var_dump($this->authenticationManager->hasIdentity()));
+
         if($this->authenticationManager->hasIdentity()){
+
+            $user = $this->entityManager->getRepository(User::class)
+                ->findOneBy([
+                    'email' =>$this->authenticationManager->getIdentity(),
+                    'forum_id'=>Module::getForumId()
+                ]);
+
+            $dropdown = [];
+            $dropdown[] = [
+                'name'=>'Mon compte',
+                'link' => $url('forum/account', ['id_forum'=>$this->forum->getId() ]),
+            ];
+
+            $dropdown[] = [
+                'name'=>'Mon profil',
+                'link' => $url('forum/profile', ['id_forum'=>$this->forum->getId() ]),
+            ];
+
+            $dropdown[] =                     [
+                'name'=>'Déconnexion',
+                'link' => $url('forum/forum_logout', ['id_forum'=>$this->forum->getId() ]),
+            ];
+
+
+
             $element = [
-                'name' => $this->authenticationManager->getIdentity(),
-                'dropdown'=>[
-                    [
-                        'name'=>'Mon compte',
-                        'link' => $url('forum/account', ['id_forum'=>$this->forum->getId() ]),
-                    ],
-                    [
-                        'name'=>'Mon profil',
-                        'link' => $url('forum/profile', ['id_forum'=>$this->forum->getId() ]),
-                    ],
-                    [
-                        'name'=>'Déconnexion',
-                        'link' => $url('forum/forum_logout', ['id_forum'=>$this->forum->getId() ]),
-                    ]
-                ],
+                'name' => $user->getAlias(),
+                'dropdown'=>$dropdown,
 
             ];
             $elements[] = $element;

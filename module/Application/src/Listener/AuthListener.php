@@ -13,6 +13,7 @@ use Laminas\EventManager\AbstractListenerAggregate;
 use Laminas\EventManager\EventManagerInterface;
 use Laminas\Mvc\MvcEvent;
 use User\Controller\AuthController;
+use User\Module;
 use User\Service\AuthManager;
 
 class AuthListener extends AbstractListenerAggregate
@@ -44,7 +45,6 @@ class AuthListener extends AbstractListenerAggregate
 
         $actionName = $routeMatch->getParam('action', null);
 
-
         $actionName = str_replace('-', '', lcfirst(ucwords($actionName, '-')));
 
         $authManager = $this->event->getApplication()->getServiceManager()->get(AuthManager::class);
@@ -66,7 +66,8 @@ class AuthListener extends AbstractListenerAggregate
                 $redirectUrl = $uri->toString();
 
                 // Redirect the user to the "Login" page.
-                return $controller->redirect()->toRoute($this->getRoute($routeMatch), ['id_forum' => self::getForumId()],
+
+                return $controller->redirect()->toRoute('forum/forum_login', ['id_forum' => Module::getForumId()],
                     ['query' => ['redirectUrl' => $redirectUrl]]);
             } else if ($result == AuthManager::ACCESS_DENIED) {
 

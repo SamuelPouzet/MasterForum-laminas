@@ -1,0 +1,74 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Sam
+ * Date: 09/08/2020
+ * Time: 17:38
+ */
+?>
+
+<?php
+$this->headTitle('Création de forum');
+
+
+$form->get('name')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'Titre'
+]);
+
+$form->get('description')->setAttributes([
+    'class'=>'form-control',
+    'placeholder'=>'--'
+]);
+
+$form->get('icon')->setAttributes([
+    'class'=>'form-control'
+]);
+
+$form->get('submit')->setAttributes(['class'=>'btn btn-primary']);
+
+$form->prepare();
+?>
+
+<h1> Nouveau Forum </h1>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <?= $this->form()->openTag($form); ?>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('name')); ?>
+            <?= $this->formElement($form->get('name')); ?>
+            <?= $this->formElementErrors($form->get('name')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('description')); ?>
+            <?= $this->formElement($form->get('description')); ?>
+            <?= $this->formElementErrors($form->get('description')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('icon')); ?>
+            <?= $this->formElement($form->get('icon')); ?>
+            <?= $this->formElementErrors($form->get('icon')); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $this->formLabel($form->get('owner')->get('name')); ?>
+            <?= $this->formElement($form->get('owner')->get('name')); ?>
+            <?= $this->formElementErrors($form->get('owner')->get('name')); ?>
+        </div>
+
+
+
+        <?= $this->formElement($form->get('csrf')); ?>
+        <?= $this->formElementErrors($form->get('csrf')); ?>
+        <?= $this->formElement($form->get('submit')); ?>
+
+        <?= $this->form()->closeTag(); ?>
+    </div>
+</div>
+
+

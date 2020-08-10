@@ -35,6 +35,11 @@ class Forum
     protected $name;
 
     /**
+     * @ORM\Column(name="description")
+     */
+    protected $description;
+
+    /**
      * @ORM\Column(name="icon")
      */
     protected $icon;
@@ -171,7 +176,7 @@ class Forum
     /**
      * @return PersistentCollection
      */
-    public function getElements():Elements
+    public function getElements():?Elements
     {
         return $this->elements;
     }
@@ -191,6 +196,24 @@ class Forum
     public function setCustomHeader($custom_header)
     {
         $this->custom_header = $custom_header;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription():string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     * @return Forum
+     */
+    public function setDescription(string $description):Forum
+    {
+        $this->description = $description;
         return $this;
     }
 

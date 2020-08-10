@@ -68,16 +68,7 @@ use \Application\Service\Messenger\Factory\ResponseManagerFactory as MessengerRe
 return [
     'router' => [
         'routes' => [
-            'home' => [
-                'type'    => Literal::class,
-                'options' => [
-                    'route'    => '/',
-                    'defaults' => [
-                        'controller' => Controller\IndexController::class,
-                        'action'     => 'index',
-                    ],
-                ],
-            ],
+
             'application' => [
                 'type'    => Segment::class,
                 'options' => [
@@ -328,7 +319,7 @@ return [
                 ['actions' => ['index'], 'allow' => '*'],
             ],
             ProfileController::class => [
-                ['actions' => ['index'], 'allow' => '@'],
+                ['actions' => ['index'], 'allow' => '*'],
             ],
             AccountController::class => [
                 ['actions' => ['index'], 'allow' => '@'],

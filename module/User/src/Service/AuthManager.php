@@ -33,7 +33,9 @@ class AuthManager
 
     protected $sessionManager;
 
-    public function __construct(array $config, AuthenticationService $authenticationService, SessionManager $sessionManager)
+    protected $rbacManager;
+
+    public function __construct(array $config, AuthenticationService $authenticationService, SessionManager $sessionManager, RbacManager $rbacManager)
     {
 
         if(!isset($config['mode'])){
@@ -46,6 +48,7 @@ class AuthManager
 
         $this->authenticationService = $authenticationService;
         $this->sessionManager = $sessionManager;
+        $this->rbacManager = $rbacManager;
     }
 
     public function validate(array $data):Result
@@ -102,8 +105,10 @@ class AuthManager
     private function  checkAuthorization(string $allow):int
     {
 
-
         switch($allow[0]) {
+            case "*":
+                return self::ACCESS_GRANTED;
+                break;
             case "@":
                 if ($this->authenticationService->hasIdentity()){
                     return self::ACCESS_GRANTED;
@@ -112,7 +117,12 @@ class AuthManager
                 }
                 break;
             case "+":
-                //@todo: gestion des rôles
+                if( $this->rbacManager->isGranted( ltrim($allow,
+                    "+") ) ){
+                    return self::ACCESS_GRANTED;
+                }else{
+                    return self::ACCESS_DENIED;
+                }
                 break;
             case "#":
                 //@todo: gestion des personnes

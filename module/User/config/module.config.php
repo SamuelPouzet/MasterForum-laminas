@@ -12,8 +12,10 @@ use User\Service\Adapter\Factory\AuthAdapterFactory;
 use User\Service\Adapter\AuthAdapter;
 use User\Service\Factory\AuthenticationServiceFactory;
 use User\Service\Factory\LogManagerFactory;
+use User\Service\Factory\RbacManagerFactory;
 use User\Service\Factory\UserManagerFactory;
 use User\Service\LogManager;
+use User\Service\RbacManager;
 use User\Service\UserManager;
 
 return [
@@ -165,6 +167,7 @@ return [
             UserManager::class=>UserManagerFactory::class,
             AuthAdapter::class=>AuthAdapterFactory::class,
             LogManager::class=>LogManagerFactory::class,
+            RbacManager::class=>RbacManagerFactory::class,
         ],
     ],
     'view_manager' => [

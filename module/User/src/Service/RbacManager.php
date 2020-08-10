@@ -2,10 +2,11 @@
 namespace User\Service;
 
 use Laminas\Permissions\Rbac\Rbac;
-use Laminas\Permissions\Rbac\Role as RbacRole;
 use User\Entity\User;
 use User\Entity\Role;
-use User\Entity\Permission;
+use Doctrine\ORM\EntityManager;
+use User\Module;
+use Laminas\Cache\Storage\StorageInterface;
 
 /**
  * This service is responsible for initialzing RBAC (Role-Based Access Control).
@@ -14,25 +15,25 @@ class RbacManager
 {
     /**
      * Doctrine entity manager.
-     * @var Doctrine\ORM\EntityManager
+     * @var EntityManager
      */
     private $entityManager; 
     
     /**
      * RBAC service.
-     * @var Laminas\Permissions\Rbac\Rbac
+     * @var Rbac
      */
     private $rbac;
     
     /**
      * Auth service.
-     * @var Laminas\Authentication\AuthenticationService
+     * @var AuthenticationService
      */
     private $authService;
     
     /**
      * Filesystem cache.
-     * @var Laminas\Cache\Storage\StorageInterface
+     * @var StorageInterface
      */
     private $cache;
     
@@ -110,31 +111,35 @@ class RbacManager
      * @param string $permission
      * @param array|null $params
      */
-    public function isGranted($user, $permission, $params = null)
+    public function isGranted($permission, $params = null)
     {
+        $this->init(true);
+
         if ($this->rbac==null) {
             $this->init();
         }
-        
-        if ($user==null) {
-            
-            $identity = $this->authService->getIdentity();
-            if ($identity==null) {
-                return false;
-            }
-            
-            $user = $this->entityManager->getRepository(User::class)
-                    ->findOneByEmail($identity);
-            if ($user==null) {
-                // Oops.. the identity presents in session, but there is no such user in database.
-                // We throw an exception, because this is a possible security problem.
-                throw new \Exception('There is no user with such identity');
-            }
+
+        $identity = $this->authService->getIdentity();
+        if ($identity==null) {
+            return false;
         }
-        
+
+        $user = $this->entityManager->getRepository(User::class)
+                ->findOneBy([
+                    'email' =>$identity,
+                    'forum_id'=>Module::getForumId()
+                ]);
+        if ($user==null) {
+            // Oops.. the identity presents in session, but there is no such user in database.
+            // We throw an exception, because this is a possible security problem.
+            throw new \Exception('There is no user with such identity');
+        }
+
+
         $roles = $user->getRoles();
-        
+
         foreach ($roles as $role) {
+
             if ($this->rbac->isGranted($role->getName(), $permission)) {
                 
                 if ($params==null)

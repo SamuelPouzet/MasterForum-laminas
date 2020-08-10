@@ -3,7 +3,7 @@ namespace User\Service\Factory;
 
 use Interop\Container\ContainerInterface;
 use User\Service\RbacManager;
-use Laminas\Authentication\AuthenticationService;
+use User\Service\AuthenticationService;
 
 /**
  * This is the factory class for RbacManager service. The purpose of the factory
@@ -19,7 +19,6 @@ class RbacManagerFactory
         $entityManager = $container->get('doctrine.entitymanager.orm_default');
         $authService = $container->get(AuthenticationService::class);
         $cache = $container->get('FilesystemCache');
-        
         $assertionManagers = [];
         $config = $container->get('Config');
         if (isset($config['rbac_manager']['assertions'])) {

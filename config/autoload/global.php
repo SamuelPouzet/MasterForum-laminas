@@ -36,6 +36,7 @@ return [
         'remember_me_seconds' =>  60*60*24*30, // How long to store remember_me session
         'cookie_secure' => false,
         'save_path' => ROOT_PATH . '/data/session',
+        'use_cookies' => true,
     ],
     // Session manager configuration.
     'session_manager' => [

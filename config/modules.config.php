@@ -12,12 +12,13 @@
  * This should be an array of module namespaces used in the application.
  */
 return [
+    'Laminas\Serializer',
     'Laminas\Mail',
     'Laminas\Session',
     'Laminas\Mvc\I18n',
     'Laminas\I18n',
-    'Zend\Cache',
-    'Zend\Paginator',
+    'Laminas\Cache',
+    'Laminas\Paginator',
     'Laminas\Form',
     'Laminas\Hydrator',
     'Laminas\InputFilter',
@@ -31,4 +32,5 @@ return [
     'User',
     'Administration',
     'Css',
+    'Main',
 ];
